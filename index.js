@@ -86,6 +86,9 @@ export const formatProductName = (name) => {
 		case "Saturacao_":
 			return "Saturação %";
 
+		case "CTC_cmol_d":
+			return "CTC";
+
 		default:
 			console.warn("Mapear novo produto", name);
 			return "Produto não mapeado";
