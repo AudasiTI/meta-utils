@@ -87,6 +87,10 @@ export const formatProductName = (name) => {
 			return "Saturação %";
 
 		case "CTC_cmol_d":
+		case "CTC":
+		case "CTC__mg":
+		case "ctc__mg":
+		case "Ctc__mg":
 			return "CTC";
 
 		default:
