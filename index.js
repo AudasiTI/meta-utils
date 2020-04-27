@@ -122,6 +122,9 @@ export const formatProductName = (name) => {
 		case "Ctc__mg":
 			return "CTC";
 
+		case "Argila_g_d":
+			return "Argila";
+
 		default:
 			console.warn("Mapear novo produto", name);
 			return "Produto não mapeado";
@@ -180,6 +183,9 @@ export const returmOrder = (name) => {
 		case "Matéria_Or":
 		case "Materia_Or":
 			return 13;
+
+		case "Argila_g_d":
+			return 15;
 
 		case "P":
 		case "Fosforo_mg":
