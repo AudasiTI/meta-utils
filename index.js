@@ -6,7 +6,7 @@
  * npm install git+https://f364123cc07eae150f120f30c254f9af1c44b489:x-oauth-basic@github.com/warteruzannan/meta-utils.git
  */
 
-const formatRawName = (name) => {
+export const formatRawName = (name) => {
 	switch (name) {
 		case "C�lcio_cmo":
 			return "Cálcio_cmo";
