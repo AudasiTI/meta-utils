@@ -512,7 +512,7 @@ export const elements = [
 			low: 150.0,
 			medium: 250.0,
 			good: 350,
-			very_good: 400,
+			very_good: 440,
 		},
 	},
 ];
