@@ -502,4 +502,17 @@ export const elements = [
 			very_good: 5.0,
 		},
 	},
+
+	{
+		name: "Argila_g_d",
+		unit_measure: "mg/dm³",
+		references_values: {
+			initial_very_low: 0.0,
+			very_low: 90.0,
+			low: 150.0,
+			medium: 250.0,
+			good: 350,
+			very_good: 400,
+		},
+	},
 ];
