@@ -6,7 +6,7 @@
  * npm install git+https://f364123cc07eae150f120f30c254f9af1c44b489:x-oauth-basic@github.com/warteruzannan/meta-utils.git
  */
 
-export const formatRawName = (name) => {
+const formatRawName = (name) => {
 	switch (name) {
 		case "C�lcio_cmo":
 			return "Cálcio_cmo";
@@ -39,7 +39,8 @@ export const formatRawName = (name) => {
  * Formatr o nome do produto
  * @param {String} name
  */
-export const formatProductName = (name) => {
+
+const formatProductName = (name) => {
 	switch (name) {
 		case "Magnesio_c":
 		case "Magnésio_c":
@@ -135,7 +136,7 @@ export const formatProductName = (name) => {
  * Formatr o nome do produto
  * @param {String} name
  */
-export const returmOrder = (name) => {
+const returmOrder = (name) => {
 	switch (name) {
 		case "Alumínio_c":
 		case "Aluminio_c":
@@ -228,7 +229,7 @@ export const returmOrder = (name) => {
 	}
 };
 
-export const elements = [
+const elements = [
 	{
 		name: "Desconhecido",
 		unit_measure: "",
@@ -516,3 +517,10 @@ export const elements = [
 		},
 	},
 ];
+
+module.exports = {
+	formatRawName,
+	formatProductName,
+	returmOrder,
+	elements,
+};
