@@ -30,6 +30,10 @@ export const formatRawName = (name) => {
 			return "Uréia";
 		case "Satura��o_":
 			return "Saturação_";
+		case "Alum�nio_c":
+			return "Alumínio_c";
+		case "Allum�nio_dm_3":
+			return "Allumínio_dm_3";
 		default:
 			return name;
 	}
@@ -39,6 +43,7 @@ export const formatRawName = (name) => {
  * Formatr o nome do produto
  * @param {String} name
  */
+
 export const formatProductName = (name) => {
 	switch (name) {
 		case "Magnesio_c":
@@ -125,6 +130,10 @@ export const formatProductName = (name) => {
 		case "Argila_g_d":
 			return "Argila";
 
+		case "Alumínio_c":
+		case "Alumínio_dm_3":
+			return "Alumínio";
+
 		default:
 			console.warn("Mapear novo produto", name);
 			return "Produto não mapeado";
@@ -140,7 +149,6 @@ export const returmOrder = (name) => {
 		case "Alumínio_c":
 		case "Aluminio_c":
 		case "Alumínio_dm":
-		case "Aluminio_dm":
 		case "Aluminio_gm":
 			return 1;
 
@@ -513,6 +521,30 @@ export const elements = [
 			medium: 250.0,
 			good: 350,
 			very_good: 440,
+		},
+	},
+	{
+		name: "Aluminio_dm_3",
+		unit_measure: "cmol/dm³",
+		references_values: {
+			initial_very_low: 0.0,
+			very_low: 0.01,
+			low: 0.04,
+			medium: 0.07,
+			good: 0.11,
+			very_good: 0.18,
+		},
+	},
+	{
+		name: "Alumínio_c",
+		unit_measure: "cmol/dm³",
+		references_values: {
+			initial_very_low: 0.0,
+			very_low: 0.01,
+			low: 0.04,
+			medium: 0.07,
+			good: 0.11,
+			very_good: 0.18,
 		},
 	},
 ];
