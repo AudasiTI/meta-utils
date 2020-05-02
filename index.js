@@ -48,7 +48,7 @@ const formatProductName = (name) => {
 	switch (name) {
 		case "Magnesio_c":
 		case "Magnésio_c":
-			return "Magnesio";
+			return "Magnésio";
 
 		case "Cobre_mg_d":
 			return "Cobre";
