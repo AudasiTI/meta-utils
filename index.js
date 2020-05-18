@@ -549,9 +549,21 @@ const elements = [
 	},
 ];
 
+function getUniqueNameForFarm(fullname = "") {
+	const fullKey = fullname
+		.toLowerCase()
+		.trim()
+		.normalize("NFD")
+		.replace(/[\u0300-\u036f]/g, "")
+		.replace(/ /g, "");
+
+	return fullKey;
+}
+
 module.exports = {
 	formatRawName,
 	formatProductName,
 	returmOrder,
 	elements,
+	getUniqueNameForFarm,
 };
