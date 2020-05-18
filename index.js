@@ -548,3 +548,14 @@ export const elements = [
 		},
 	},
 ];
+
+export function getUniqueNameForFarm(fullname = "") {
+	const fullKey = fullname
+		.toLowerCase()
+		.trim()
+		.normalize("NFD")
+		.replace(/[\u0300-\u036f]/g, "")
+		.replace(/ /g, "");
+
+	return fullKey;
+}
