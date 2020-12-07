@@ -513,14 +513,14 @@ const elements = [
 
 	{
 		name: "Argila_g_d",
-		unit_measure: "mg/dm³",
+		unit_measure: "g/dm³",
 		references_values: {
-			initial_very_low: 0.0,
-			very_low: 90.0,
-			low: 150.0,
-			medium: 250.0,
-			good: 350,
-			very_good: 440,
+			initial_very_low: 50.0,
+			very_low: 150.0,
+			low: 250.0,
+			medium: 350.0,
+			good: 500,
+			very_good: 700,
 		},
 	},
 	{
