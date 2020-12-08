@@ -500,14 +500,14 @@ export const elements = [
 	},
 	{
 		name: "Saturação_",
-		unit_measure: "mg/dm³",
+		unit_measure: "%",
 		references_values: {
-			initial_very_low: 0.0,
-			very_low: 0.0,
-			low: 0.9,
-			medium: 1.3,
-			good: 1.6,
-			very_good: 5.0,
+			initial_very_low: 1.0,
+			very_low: 20.0,
+			low: 30.0,
+			medium: 45.0,
+			good: 60.0,
+			very_good: 100.0,
 		},
 	},
 
