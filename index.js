@@ -2,8 +2,7 @@
  * @author Warteruzannan
  * @email Warteruzannan
  * @create date 2020-01-10 15:10:44
- * @modify date 2020-01-10 15:10:44
- * npm install git+https://f364123cc07eae150f120f30c254f9af1c44b489:x-oauth-basic@github.com/warteruzannan/meta-utils.git
+ * @modify date 2020-01-10 15:10:44 
  */
 
 export const formatRawName = (name) => {
